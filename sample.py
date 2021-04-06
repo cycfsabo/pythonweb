@@ -17,11 +17,12 @@ class HelloRequestHandler(BaseHTTPRequestHandler):
         response_text = textwrap.dedent('''\
             <html>
             <head>
-                <title>Hello CHH</title>
+                <title>Hello World</title>
             </head>
             <body>
                 <h1>Hello, World!</h1>
                 <p>... Here we are!</p>
+                <p>I'm Hung Cao!</p>
             </body>
             </html>
         ''')
