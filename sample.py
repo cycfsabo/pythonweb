@@ -24,6 +24,7 @@ class HelloRequestHandler(BaseHTTPRequestHandler):
                 <p>... Here we are!</p>
                 <p>I'm Hung Cao!</p>
                 <p>Here we go!</p>
+                <p>Done!</p>
             </body>
             </html>
         ''')
