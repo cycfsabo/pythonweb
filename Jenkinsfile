@@ -25,7 +25,7 @@ pipeline {
                         sh '''sudo ssh -i /home/ubuntu/hungcao.pem ubuntu@18.140.64.78 << EOF
                                 #!/bin/bash
                                 echo 'hello?'
-                                systemctl restart pythonweb.service
+                                sudo /bin/systemctl restart pythonweb.service
                             EOF'''
                     } else {
                         sh 'pwd'
