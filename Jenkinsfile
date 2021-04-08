@@ -2,10 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Pull') {
             steps {
-                echo 'Hello World'
-		echo "${env.GIT_BRANCH}"
+		echo "Pulling from...${env.GIT_BRANCH}"
             }
         }
         stage('Build') {
