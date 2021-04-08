@@ -22,7 +22,7 @@ pipeline {
                 script {
                     if (env.GIT_BRANCH == 'master') {
                         sh 'echo \'a\' | sudo -S scp -i /home/ubuntu/hungcao.pem -r ./* ubuntu@18.140.64.78:/home/ubuntu/web/'
-                        sh '''sudo ssh -i /home/ubuntu/hungcao.pem ubuntu@18.140.64.78 << EOF 
+                        sh '''sudo ssh -i /home/ubuntu/hungcao.pem ubuntu@18.140.64.78 << EOF
                                 echo \'a\' | sudo -S systemctl restart pythonweb.service
                             EOF'''
                     } else {
