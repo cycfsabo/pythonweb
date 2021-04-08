@@ -20,7 +20,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh 'pwd'
-                sh 'sudo cp -Rf . /home/ubuntu/web/'
+                sh 'echo \'a\' | sudo -S cp -Rf . /home/ubuntu/web/'
                 sh 'sudo chown -R jenkins:jenkins /home/ubuntu/web/'
                 sh 'echo \'a\' | sudo -S systemctl restart pythonweb'
             }
