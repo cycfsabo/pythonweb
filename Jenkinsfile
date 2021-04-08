@@ -21,7 +21,7 @@ pipeline {
             steps {
                 sh 'pwd'
                 sh 'cp -Rf . /home/ubuntu/web/'
-                sh 'sudo chown -R jenkins:jenkins /home/ubuntu/web/'
+                sh 'echo \'a\' | sudo -S chown -R jenkins:root /home/ubuntu/web/'
                 sh 'echo \'a\' | sudo -S systemctl restart pythonweb'
             }
         }
