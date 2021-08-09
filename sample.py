@@ -23,7 +23,7 @@ class HelloRequestHandler(BaseHTTPRequestHandler):
                 <h1>Hello, World!</h1>
                 <p>... Here we are!</p>
                 <p>I'm a DevOps Engineer</p>
-                <h2>I'm Deploy-server. You have deployed webserver successfully!!!</h2>
+                <h2>I'm Deploy-server. You have deployed webserver successfully!</h2>
                 <h3>Jadon Sancho is red. Here we go!</h3>
                 <h3>Done!</h3>
             </body>
