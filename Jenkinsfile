@@ -1,5 +1,7 @@
 pipeline {
-    agent runner
+    agent {
+        label 'ubuntu'
+    }
 
     stages {
         stage('Pull') {
@@ -19,7 +21,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-		        echo 'Deploy successfully!'
+		        echo 'Deploy successfully!!!'
+            }
         }
     }
 }
